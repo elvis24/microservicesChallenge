@@ -28,3 +28,9 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
+
+        run: |
+    sonar-scanner \
+      -Dsonar.projectKey=proyectoSpring \
+      -Dsonar.organization=elvis24 \
+      -Dsonar.host.url=https://sonarcloud.io
